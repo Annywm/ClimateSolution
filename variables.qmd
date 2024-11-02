@@ -1,0 +1,12 @@
+---
+title: "Variables"
+format: html
+---
+## GHG Emission Model Variables
+
+### Climate 
+
+| **Variable Name** | **Description** | **Units** | **Associate Formula/Variables(if applicable)** | **Region/Country Specific** | **Data Source** | 
+|--------------------|-----------------|-----------|-----------------------------|----------------------------|------------------|
+| P | Annual growing season precipitation (May – October) | mm | $EF_{{CT}_{P}}$ | Common | Default(based on ecodistrict level) & External Source (NASA)| 
+| PE | Annual growing season potential evapotranspiration (May – October)  | mm  | $EF_{{CT}_{PE}}$| Common | Default(based on ecodistrict level) & External Source(NASA) | 
