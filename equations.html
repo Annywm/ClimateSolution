@@ -141,10 +141,21 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./timeline.html"> 
-<span class="menu-text">Timeline</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-updates" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Updates</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-updates">    
+        <li>
+    <a class="dropdown-item" href="./timeline.html">
+ <span class="dropdown-text">Timeline</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html">
+ <span class="dropdown-text">To-Do List</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./reference.html"> 
 <span class="menu-text">References</span></a>
@@ -190,12 +201,14 @@ window.Quarto = {
   <ul>
   <li><a href="#formula-used-to-calculate-co_2-emission" id="toc-formula-used-to-calculate-co_2-emission" class="nav-link active" data-scroll-target="#formula-used-to-calculate-co_2-emission">Formula used to calculate CO_2 Emission</a>
   <ul class="collapse">
-  <li><a href="#n_cropresidues" id="toc-n_cropresidues" class="nav-link" data-scroll-target="#n_cropresidues"><span class="math inline">\(N_{CropResidues}\)</span></a></li>
+  <li><a href="#nitrogen-inputs-from-crop-residue-returned-to-soil" id="toc-nitrogen-inputs-from-crop-residue-returned-to-soil" class="nav-link" data-scroll-target="#nitrogen-inputs-from-crop-residue-returned-to-soil">Nitrogen Inputs From Crop Residue Returned To Soil</a></li>
   <li><a href="#above-ground-residue-nitrogen" id="toc-above-ground-residue-nitrogen" class="nav-link" data-scroll-target="#above-ground-residue-nitrogen">Above Ground Residue Nitrogen</a></li>
   <li><a href="#below-ground-residue-nitrogen" id="toc-below-ground-residue-nitrogen" class="nav-link" data-scroll-target="#below-ground-residue-nitrogen">Below Ground Residue Nitrogen</a></li>
+  <li><a href="#nitrogen-content-returned-to-the-soil" id="toc-nitrogen-content-returned-to-the-soil" class="nav-link" data-scroll-target="#nitrogen-content-returned-to-the-soil">Nitrogen Content Returned To The Soil</a></li>
+  <li><a href="#carbon-input" id="toc-carbon-input" class="nav-link" data-scroll-target="#carbon-input">Carbon Input</a></li>
   <li><a href="#emission-factor" id="toc-emission-factor" class="nav-link" data-scroll-target="#emission-factor">Emission Factor</a></li>
   <li><a href="#the-total-direct-nitrogen-emission-from-all-crop-sources" id="toc-the-total-direct-nitrogen-emission-from-all-crop-sources" class="nav-link" data-scroll-target="#the-total-direct-nitrogen-emission-from-all-crop-sources">2. The total direct nitrogen emission from all crop sources</a></li>
-  <li><a href="#n_cropresidues-1" id="toc-n_cropresidues-1" class="nav-link" data-scroll-target="#n_cropresidues-1"><span class="math inline">\(N_{CropResidues}\)</span></a></li>
+  <li><a href="#n_cropresidues" id="toc-n_cropresidues" class="nav-link" data-scroll-target="#n_cropresidues"><span class="math inline">\(N_{CropResidues}\)</span></a></li>
   <li><a href="#c_s-carbon-input-from-straw" id="toc-c_s-carbon-input-from-straw" class="nav-link" data-scroll-target="#c_s-carbon-input-from-straw">3. <span class="math inline">\(C_s\)</span>: Carbon Input from Straw</a></li>
   <li><a href="#c_r-carbon-input-from-root" id="toc-c_r-carbon-input-from-root" class="nav-link" data-scroll-target="#c_r-carbon-input-from-root">4. <span class="math inline">\(C_r\)</span>: Carbon input from Root</a></li>
   <li><a href="#c_e-carbon-input-from-exudate" id="toc-c_e-carbon-input-from-exudate" class="nav-link" data-scroll-target="#c_e-carbon-input-from-exudate">5. <span class="math inline">\(C_e\)</span>: Carbon Input from Exudate</a></li>
@@ -206,7 +219,7 @@ window.Quarto = {
   <li><a href="#aboveground-residue-nitrogen" id="toc-aboveground-residue-nitrogen" class="nav-link" data-scroll-target="#aboveground-residue-nitrogen">10. AboveGround Residue Nitrogen</a></li>
   <li><a href="#belowground-residue-nitrogen" id="toc-belowground-residue-nitrogen" class="nav-link" data-scroll-target="#belowground-residue-nitrogen">11. BelowGround Residue Nitrogen</a></li>
   <li><a href="#the-total-nitrogen-content-of-the-crop-residuen_crop_residues." id="toc-the-total-nitrogen-content-of-the-crop-residuen_crop_residues." class="nav-link" data-scroll-target="#the-total-nitrogen-content-of-the-crop-residuen_crop_residues.">12. The total nitrogen content of the crop residue(<span class="math inline">\(N_{crop\_residues}\)</span>).</a></li>
-  <li><a href="#carbon-input" id="toc-carbon-input" class="nav-link" data-scroll-target="#carbon-input">Carbon Input</a></li>
+  <li><a href="#carbon-input-1" id="toc-carbon-input-1" class="nav-link" data-scroll-target="#carbon-input-1">Carbon Input</a></li>
   <li><a href="#emissionfactorcalculator" id="toc-emissionfactorcalculator" class="nav-link" data-scroll-target="#emissionfactorcalculator">EmissionFactorCalculator</a></li>
   <li><a href="#calculate-base-emission-factor---due-to-ecodistrict-level-emission-factor" id="toc-calculate-base-emission-factor---due-to-ecodistrict-level-emission-factor" class="nav-link" data-scroll-target="#calculate-base-emission-factor---due-to-ecodistrict-level-emission-factor">1. Calculate Base Emission Factor - Due to Ecodistrict-level Emission Factor</a></li>
   <li><a href="#calculate-emission-factor-adjustment-due-to-position-in-landscapetopography" id="toc-calculate-emission-factor-adjustment-due-to-position-in-landscapetopography" class="nav-link" data-scroll-target="#calculate-emission-factor-adjustment-due-to-position-in-landscapetopography">2. Calculate Emission Factor Adjustment Due to Position in Landscape/Topography</a></li>
@@ -247,39 +260,17 @@ window.Quarto = {
 </header>
 
 
-<ul>
-<li>we do not consider these three variables in the Pyholos yet:
-<ul>
-<li><span class="math inline">\(N_2O_{N_{SNdirect}}\)</span>,</li>
-<li><span class="math inline">\(N_2O_{N_{CRNmindirect}}\)</span></li>
-<li><span class="math inline">\(N_2O_{N_{ONdirect}}\)</span></li>
-</ul></li>
-<li><span class="math inline">\(N_{CropResidues}\)</span> depend on the crop should be the same?</li>
-<li><span class="math inline">\(EF_{Topo}\)</span> depends on P and PE</li>
-<li><span class="math inline">\(RF\_TX\)</span> depends on soil texure</li>
-</ul>
 <section id="formula-used-to-calculate-co_2-emission" class="level2">
 <h2 class="anchored" data-anchor-id="formula-used-to-calculate-co_2-emission">Formula used to calculate CO_2 Emission</h2>
-<p><span class="math display">\[
-CO_2 = 273 \times \frac{44}{28} * N_2O_{N_{direct}}
-\]</span></p>
-<p><span class="math display">\[
-N_2O_{N_{direct}} = N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + N_2O_{N_{CropResidues}}
-\]</span></p>
-<p><span class="math display">\[
-N_2O_{N_{CropResidues}} = N_{CropResidues} \times EF
-\]</span></p>
-<p><span class="math display">\[
-N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times {area}
-\]</span></p>
-<p><span class="math display">\[
-EF = EF_{Base} * RF\_NS * RF\_Till *RF\_CS * RF\_AM
-\]</span></p>
-<p><span class="math display">\[
-(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N})*area))
-\]</span></p>
-<section id="n_cropresidues" class="level3">
-<h3 class="anchored" data-anchor-id="n_cropresidues"><span class="math inline">\(N_{CropResidues}\)</span></h3>
+<ul>
+<li><p><span class="math inline">\(CO_2 = 273 \times \frac{44}{28} * N_2O_{N_{direct}}\)</span></p></li>
+<li><p><span class="math inline">\(N_2O_{N_{direct}} = N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + N_2O_{N_{CropResidues}}\)</span></p></li>
+<li><p><span class="math inline">\(N_2O_{N_{CropResidues}} = N_{CropResidues} \times EF\)</span></p></li>
+<li><p><span class="math inline">\(N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times {area}\)</span></p></li>
+<li><p><span class="math inline">\(EF = EF_{Base} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM\)</span></p></li>
+</ul>
+<section id="nitrogen-inputs-from-crop-residue-returned-to-soil" class="level3">
+<h3 class="anchored" data-anchor-id="nitrogen-inputs-from-crop-residue-returned-to-soil">Nitrogen Inputs From Crop Residue Returned To Soil</h3>
 <p><span class="math display">\[
 N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N})*area
 \]</span></p>
@@ -295,24 +286,11 @@ AboveGround_{residue\_N} = [{Grain_N} + {Straw_N}]
 AboveGround_{residue\_N} = {Straw_N}
 \]</span></p>
 <p>For Cover and Silage Plant, <span class="math display">\[
-AboveGround_{residue\_N} = {Grain_N} \quad \text{(2.5.6-6)}
+AboveGround_{residue\_N} = {Grain_N}
 \]</span></p>
 <ul>
-<li><p>${Grain_N} = $</p></li>
-<li><p>${Straw_N} = $</p>
-<ul>
-<li><span class="math inline">\(C_{p\_to\_soil} = C_p \times \frac{S_p}{100}\)</span></li>
-<li><span class="math inline">\(C_s = C_p \times \frac{R_s}{R_p} \times \frac{S_s}{100}\)</span>
-<ul>
-<li>$C_p = [(yield + yield ) (1 - )] $
-<ul>
-<li>yield is defined by users</li>
-<li>moisture content is default based on the crop type</li>
-<li>Carbon concentration is default based on the crop type</li>
-<li><span class="math inline">\(S_p, N_p, N_s\)</span></li>
-</ul></li>
-</ul></li>
-</ul></li>
+<li><p><span class="math inline">\(Grain_N\)</span> : Nitrogen content of the grain returned to the soil (kg N/ha)</p></li>
+<li><p><span class="math inline">\(Straw_N\)</span> : Nitrogen content of the straw returned to the soil (kg N/ha)</p></li>
 </ul>
 </section>
 <section id="below-ground-residue-nitrogen" class="level3">
@@ -330,15 +308,53 @@ BelowGround_{residue_N} = {Grian_N} + {Exudate_N}
 \]</span></p>
 <p>For cover and silage plant,</p>
 <p><span class="math display">\[
-BelowGround_{residue_N} = {Root_N} + {Exudate_N} \quad \text{(2.5.6-8)}
+BelowGround_{residue_N} = {Root_N} + {Exudate_N}
 \]</span></p>
+<p><strong>Variables</strong>:</p>
 <ul>
+<li><p><span class="math inline">\(Root_N\)</span> : Nitrogen content of the roots returned to the soil (kg N/ha)</p></li>
+<li><p><span class="math inline">\(Exudate_N\)</span> : Nitrogen content of the exudates returned to the soil (kg N/ha)</p></li>
+<li><p><span class="math inline">\(Grain_N\)</span> : Nitrogen content of the grains returned to the soil (kg N/ha)</p></li>
+</ul>
+</section>
+<section id="nitrogen-content-returned-to-the-soil" class="level3">
+<h3 class="anchored" data-anchor-id="nitrogen-content-returned-to-the-soil">Nitrogen Content Returned To The Soil</h3>
+<ul>
+<li><p>${Grain_N} = $</p></li>
+<li><p>${Straw_N} = $</p></li>
 <li><p><span class="math inline">\({Root}_N = \frac{C_r}{0.45} \times \frac{N_r}{1000}\)</span></p></li>
 <li><p><span class="math inline">\({Exudate}_N = \frac{C_e}{0.45} \times \frac{N_e}{1000}\)</span></p>
+<p><strong>Variables</strong>:</p>
+<pre><code>- $C_{p\_to\_soil}$ : Carbon input from products (kg/ha) 
+- $C_p$: Plant C (carbon) in agricultural product (kg/ha) 
+- $C_s$: C (carbon) input from straw (kg/ha)
+- $C_r$: C (carbon) input from roots (kg/ha)
+- $C_e$: C (carbon) input from extra-root material (kg/ha)
+- $N_p$: Nitrogen concentration in the product (kg N/kg)
+- $N_s$: Nitrogen concentration in the straw (kg N/kg)
+- $N_r$: Nitrogen concentration in the root (kg N/kg)
+- $N_e$: Nitrogen concentration in the extraroo (kg N/kg)</code></pre></li>
+</ul>
+</section>
+<section id="carbon-input" class="level3">
+<h3 class="anchored" data-anchor-id="carbon-input">Carbon Input</h3>
 <ul>
+<li><p><span class="math inline">\(C_{p\_to\_soil} = C_p \times \frac{S_p}{100}\)</span></p></li>
+<li><p>$C_p = [(yield + yield ) (1 - )] $</p></li>
+<li><p><span class="math inline">\(C_s = C_p \times \frac{R_s}{R_p} \times \frac{S_s}{100}\)</span></p></li>
 <li><p><span class="math inline">\(C_r = C_p \times \frac{R_r}{R_p} \times \frac{S_r}{100}\)</span></p></li>
-<li><p><span class="math inline">\(C_e = C_p \times \frac{R_e}{R_p}\)</span></p></li>
-</ul></li>
+<li><p><span class="math inline">\(C_e = C_p \times \frac{R_e}{R_p}\)</span></p>
+<p><strong>Variables</strong>:</p>
+<pre><code>- yield is defined by users
+- moisture content is default based on the crop type
+- Carbon concentration is default based on the crop type
+- $S_p$: Percentage of product yield returned to soil (%)
+- $S_s$: Percentage of straw yield returned to soil (%)
+- $S_r$: Percentage of root yield returned to soil (%)
+- $R_p$: Relative biomass allocation coefficient for product
+- $R_s$: Relative biomass allocation coefficient for straw
+- $R_r$: Relative biomass allocation coefficient for root
+- $R_e$: Relative biomass allocation coefficient for extra-root</code></pre></li>
 </ul>
 </section>
 <section id="emission-factor" class="level3">
@@ -354,8 +370,10 @@ EF_{Topo} = EF_{{CT}_{P}}
 <p><span class="math display">\[
 EF_{{CT}_{PE}}= \exp^{0.00558 \times PE - 7.7}
 \]</span></p>
+<p><strong>Variables</strong>:</p>
 <ul>
-<li>For non-irrigated sites:</li>
+<li>P: Annual growing season precipitation (May – October) (mm)</li>
+<li>PE: Annual growing season potential evapotranspiration (May – October) (mm)</li>
 </ul>
 <p><span class="math display">\[
 EF_{Topo} = (EF_{{CT}_{PE}} \times FR_{Topo}) + [EF_{{CT}_{P}} \times (1 - FR_{Topo})]
@@ -366,9 +384,7 @@ EF_{Topo} = EF_{{CT}_{PE}}
 \]</span></p>
 <p><strong>Variables</strong>:</p>
 <ul>
-<li><span class="math inline">\(EF_{CT}\)</span>: Ecodistrict-level emission factor (<span class="math inline">\(kg \, N_2O\text{-}N \, (kg \, N)^{-1}\)</span>)</li>
-<li><span class="math inline">\(P\)</span>: Annual growing season precipitation (May – October)(mm)</li>
-<li><span class="math inline">\(PE\)</span>: Growing season potential evapotranspiration, by ecodistrict (May – October) (mm)</li>
+<li><span class="math inline">\(FR_{Topo}\)</span>: Fraction of land occupied by lower portions of landscape based on ecodistrict</li>
 </ul>
 <p><span class="math display">\[
 EF_{Base} = (EF_{Topo} \times RF\_TX) \times \frac{1}{0.645}
@@ -379,16 +395,21 @@ EF = EF_{Base} * RF\_NS * RF\_Till *RF\_CS * RF\_AM
 <p><span class="math display">\[
 EF = (EF_{Topo} \times RF\_TX) \times \frac{1}{0.645} * RF\_NS * RF\_Till *RF\_CS * RF\_AM
 \]</span></p>
-<p><span class="math display">\[
-N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N})*area
-\]</span></p>
+<p><strong>Variables</strong>:</p>
+<ul>
+<li><span class="math inline">\(RF_{TX}\)</span>: A correction of the <span class="math inline">\(EF_{Topo}\)</span> in specific ecodistrict based on the soil texture</li>
+<li><span class="math inline">\(RF_{CS}\)</span>: Reduction factor for Cropping System</li>
+<li><span class="math inline">\(RF_{NS}\)</span>: Reduction factor for N sourse</li>
+<li><span class="math inline">\(RF_{AM}\)</span>: Reduction factor based on application method</li>
+<li><span class="math inline">\(RF_{Till}\)</span>: Tillage modifier based on tillage method</li>
+</ul>
 </section>
 <section id="the-total-direct-nitrogen-emission-from-all-crop-sources" class="level3">
 <h3 class="anchored" data-anchor-id="the-total-direct-nitrogen-emission-from-all-crop-sources">2. The total direct nitrogen emission from all crop sources</h3>
 <p><span class="math inline">\(N_2O_{N_{direct}} = N_2O_{N_{SNdirect}} + N_2O_{N_{CropResidues}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}}\)</span></p>
 </section>
-<section id="n_cropresidues-1" class="level3">
-<h3 class="anchored" data-anchor-id="n_cropresidues-1"><span class="math inline">\(N_{CropResidues}\)</span></h3>
+<section id="n_cropresidues" class="level3">
+<h3 class="anchored" data-anchor-id="n_cropresidues"><span class="math inline">\(N_{CropResidues}\)</span></h3>
 <p><span class="math display">\[
 N_{CropResidues} = ([\frac{C_{p\_to\_soil}}{0.45} \times N_p+ \frac{C_s}{0.45} \times N_s] + BelowGround_{residue\_N}) \times {area}
 \]</span></p>
@@ -579,8 +600,8 @@ N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times 
 <li><span class="math inline">\(area\)</span>: Area of crop (<span class="math inline">\(ha\)</span>)</li>
 </ul>
 </section>
-<section id="carbon-input" class="level3">
-<h3 class="anchored" data-anchor-id="carbon-input">Carbon Input</h3>
+<section id="carbon-input-1" class="level3">
+<h3 class="anchored" data-anchor-id="carbon-input-1">Carbon Input</h3>
 <p><strong>Above ground carbon input</strong></p>
 <p>For root plants:</p>
 <p><span class="math display">\[
@@ -807,7 +828,17 @@ PE = 0
 <li><p>what is N mineralization variable</p></li>
 <li><p>ask this one <span class="math inline">\(N_{CropResidues}\)</span>: N (nitrogen) inputs from crop residue returned to soil (<span class="math inline">\(kg N\)</span>)</p></li>
 <li><p>do we need to introduce CO₂?</p></li>
+<li><p>we do not consider these three variables in the Pyholos yet:</p>
+<ul>
+<li><span class="math inline">\(N_2O_{N_{SNdirect}}\)</span>,</li>
+<li><span class="math inline">\(N_2O_{N_{CRNmindirect}}\)</span></li>
+<li><span class="math inline">\(N_2O_{N_{ONdirect}}\)</span></li>
+</ul></li>
 </ul>
+<p>General formula:</p>
+<p><span class="math display">\[
+(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N})*area))
+\]</span></p>
 
 
 </section>

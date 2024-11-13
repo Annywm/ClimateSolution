@@ -112,10 +112,21 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="./timeline.html" aria-current="page"> 
-<span class="menu-text">Timeline</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-updates" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Updates</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-updates">    
+        <li>
+    <a class="dropdown-item" href="./timeline.html">
+ <span class="dropdown-text">Timeline</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html">
+ <span class="dropdown-text">To-Do List</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./reference.html"> 
 <span class="menu-text">References</span></a>
@@ -154,14 +165,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#sofia" id="toc-sofia" class="nav-link active" data-scroll-target="#sofia">Sofia</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -186,21 +191,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>We can put our weekly meeting notes, Timeline!</p>
-<section id="sofia" class="level3">
-<h3 class="anchored" data-anchor-id="sofia">Sofia</h3>
-<p>To date, I have focused my attention to two main areas:</p>
-<ol type="1">
-<li>Reserach to determine variables which may be helpful for our own modelling purposes, to request from the UBC Farm databases.</li>
-</ol>
-<p>In item 1, I have been accessing LCA databses to see the network of inputs/outputs that certain crop farming practices require. Currently I have been exploring potato farming, in the LCA Commons database of the USDA. I believe that since LCA databases are highly utilized, I would be able to find reliable information that could be similar to what is contained at the UBC Farm databases.</p>
-<p>Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with the ecoinvent database. This will provide a detailed diagram of all the inputs/outputs that can inform our own data needs. Likley the LCA databses contain far more data than we will be able to have from the UBC Farm, but it is a very good start for our data gathering, alongside with literaeture review that is being done by me peers.</p>
-<ol start="2" type="1">
-<li>Further looking at comparisons of the model outputs coming from HOLOS and PyHOLOS.</li>
-</ol>
-<p>In item 2, I have begun to go through some JSON files with my peer Anny. These files contain the resultant values from the HOLOS models which we are comparing to the PyHOLOS model output. We noticed that there are discrpanicies between model results for the same input crops. In order to detect differences more easily, we decided to creeate a JSON decoder, to transform the JSON file into a more readable format. This could be something that we could “teach” our group memebrs about to allow for others to help us with this task once the decoder is working.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
