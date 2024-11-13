@@ -1,0 +1,102 @@
+---
+title: "Progress"
+format: html
+---
+
+## Caitie
+
+
+Continuing to cultivate useful literature to inform our project.  I am finding sources that will: 
+
+- Help us in decision-making process as we adapt the PyHolos model
+
+     - Specifically, I am reading and summarizing research that has worked to create similar models focused on carbon dioxide in relation to soil carbon, as well as models focused on nitrous oxide emissions. 
+     - focusing on literature based in Canada as much as possible and have found some very useful meta-analyses that compare and assess various types of Life Cycle Assessment models used for agriculture. 
+
+- Answer our questions regarding marketplaces and programs that currently exist focused on nitrous oxide emissions, such as Monitoring, Reporting, and Verification, as well as Payment for Ecosystem Services. 
+
+     - This research will be done to better understand how farmers can evaluate their emissions, as well as be compensated for efforts to reduce emissions. 
+
+Specifically, I have: 
+
+- Created a table to organize and summarize my literature review 
+
+     - These papers are colour coordinated to indicate readings that may be key for other group members to read. 
+
+- Created a shared Zotero library to keep track of our references as a group 
+
+- My goal is to find 10-15 journal articles and summarize them before our presentation in December.  Currently, I have dissected 4 papers. 
+
+- Using this information, I will be able to provide context and foundational information for our project, which I can lead during our presentation. 
+
+## Sofia
+
+To date, I have focused my attention to two main areas:
+
+1. Reserach to determine variables which may be helpful for our own modelling purposes, to request from the UBC Farm databases.
+
+- In item 1, I have been accessing LCA databses to see the network of inputs/outputs that certain crop farming practices require. Currently I have been exploring potato farming, in the LCA Commons database of the USDA. I believe that since LCA databases are highly utilized, I would be able to find reliable information that could be similar to what is contained at the UBC Farm databases.
+
+Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with the ecoinvent database. This will provide a detailed diagram of all the inputs/outputs that can inform our own data needs. Likley the LCA databses contain far more data than we will be able to have from the UBC Farm, but it is a very good start for our data gathering, alongside with literaeture review that is being done by me peers.
+
+2. Further looking at comparisons of the model outputs coming from HOLOS and PyHOLOS.
+
+- In item 2, I have begun to go through some JSON files with my peer Anny. These files contain the resultant values from the HOLOS models which we are comparing to the PyHOLOS model output. We noticed that there are discrpanicies between model results for the same input crops. In order to detect differences more easily, we decided to creeate a JSON decoder, to transform the JSON file into a more readable format. This could be something that we could “teach” our group memebrs about to allow for others to help us with this task once the decoder is working.
+
+
+## Anny
+
+**Focused on the comparison of model outputs from Holos and Pyholos**:
+   
+- Compared CO2 crop direct emissions for different yields of potato for UBC farm.
+![yield comparison](different yield.png)
+
+- the three lines have different slopes and intercepts, they show a similar linear trend.
+- Differences are due to: 
+    - Equations used to calculate nitrogen in below-ground crop residues for root crops 
+
+        - Holos used the formula: $BelowGround_{residue_N} = [\frac{S_r}{100} \times {Root}_N] + {Exudate_N}$(for perennial plants)
+
+        - Pyholos used the formula: $BelowGround_{residue_N} = {Grian_N} + {Exudate_N}$(for root plants)          
+- Different results for P and PE 
+
+- Compared three different provinces for the same yield (4,000 kg/ha) of potato.
+![province comparison](different province.png)        
+
+- Compared the same yield (4,000 kg/ha) for UBC Farm with different crop group types
+
+- For the crops Soybean (Annual crop), there are big differences between Holos and PyHolos in terms of crop direct emissions.
+
+- The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar.
+![crop group comparison](different crop group.png)    
+**Further Actions**
+
+  - work with Sofia to create a JSON decoder to transform JSON files into a more readable format
+  - Investicate the differences between Holos and Pyholos.
+
+
+
+
+## Task Table
+
+|Task List| Assignee | START DATE   | DUE DATE     | % COMPLETE | NOTE |
+|--------------------------------------------|----------|--------------|--------------|------------|------|
+| Literature Review (Aim for 10-15 papers)  | Caitie   | September 1st | December 1st | 10%       | Preliminary Literature Review |
+| Create Slides for the Solutions Scholar presentation | Caitie   | November 18th | December 5th | 0%       |10 mins presentation |
+| Email Alan to Discuss Data Access  | Evan   | UNKNOWN | UNKNOWN| 0%       | NA |
+| Add Notes to Literature Review  | Evan   | UNKNOWN | UNKNOWN| 0%       | NA |
+|Input Progress Update to Project Webpage via Quarto | Anny   | October 1st | June 1st| 10%      | Keep updates |
+|Create a script to transfer the json file to a table | Sofia, Anny   | November 11th | Unkown| 10%      | NA|
+|Invesitage all the default value in the Holos Model | Sofia, Anny  | November 1st | Unkown| 10%      | Focus on the Anual and Root crop for now|
+|Summarize and Refine Clear List of Deliverables for the End of Semester | Whole Team  | October 1st | June 1st| 0%      | NA |
+|Create Timeline for Solutions Scholar presentation in December  | Whole Team  | November 1st | December 1st| 0%      | NA |
+
+
+
+
+
+
+
+
+
+

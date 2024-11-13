@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -112,13 +141,24 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./timeline.html"> 
-<span class="menu-text">Timeline</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-updates" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Updates</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-updates">    
+        <li>
+    <a class="dropdown-item" href="./timeline.html">
+ <span class="dropdown-text">Timeline</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html">
+ <span class="dropdown-text">To-Do List</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./reference.html"> 
-<span class="menu-text">Reference</span></a>
+<span class="menu-text">References</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-datasets" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -154,8 +194,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ghg-emission-model-variables" id="toc-ghg-emission-model-variables" class="nav-link active" data-scroll-target="#ghg-emission-model-variables">GHG Emission Model Variables</a>
+  <ul class="collapse">
+  <li><a href="#climate" id="toc-climate" class="nav-link" data-scroll-target="#climate">Climate</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -179,9 +228,111 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>P and PE</p>
+<section id="ghg-emission-model-variables" class="level2">
+<h2 class="anchored" data-anchor-id="ghg-emission-model-variables">GHG Emission Model Variables</h2>
+<section id="climate" class="level3">
+<h3 class="anchored" data-anchor-id="climate">Climate</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 16%">
+<col style="width: 10%">
+<col style="width: 27%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable Name</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Units</strong></th>
+<th><strong>Associate Formula/Variables(if applicable)</strong></th>
+<th><strong>Region/Country Specific</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(C_p\)</span></td>
+<td>Plant C (carbon) in agricultural product</td>
+<td>kg/ha</td>
+<td><span class="math inline">\(C_{p\_to\_soil}\)</span>,<span class="math inline">\(C_s\)</span>,<span class="math inline">\(C_r\)</span>,<span class="math inline">\(C_e\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="even">
+<td>$C_{p_to_soil}</td>
+<td>Carbon input from products</td>
+<td>kg/ha</td>
+<td><span class="math inline">\(Grain_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(C_s\)</span></td>
+<td>C (carbon) input from straw</td>
+<td>kg/ha</td>
+<td><span class="math inline">\(Straw_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(C_r\)</span></td>
+<td>C (carbon) input from roots</td>
+<td>kg/ha</td>
+<td><span class="math inline">\(Root_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(C_e\)</span></td>
+<td>C (carbon) input from extra-root material</td>
+<td>kg/ha</td>
+<td><span class="math inline">\(Exuate_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Grain_N\)</span></td>
+<td>Nitrogen content of the grain returned to the soil</td>
+<td>kg N /ha</td>
+<td><span class="math inline">\(AboveGroundResidue_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Straw_N\)</span></td>
+<td>Nitrogen content of the straw returned to the soil</td>
+<td>kg N /ha</td>
+<td><span class="math inline">\(AboveGroundResidue_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Root_N\)</span></td>
+<td>Nitrogen content of the roots returned to the soil</td>
+<td>kg N /ha</td>
+<td><span class="math inline">\(BelowGroundResidue_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Exudate_N\)</span></td>
+<td>Nitrogen content of the exudates returned to the soil</td>
+<td>kg N /ha</td>
+<td><span class="math inline">\(BelowGroundResidue_N\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(AboveGroundResidue_N\)</span></td>
+<td>Nitrogen in above-ground crop residues</td>
+<td>kg N</td>
+<td><span class="math inline">\(N_{CropResidues}\)</span></td>
+<td>Common</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(BelowGroundResidue_N\)</span></td>
+<td>Nitrogen in below-ground crop residues</td>
+<td>kg N</td>
+<td><span class="math inline">\(N_{CropResidues}\)</span></td>
+<td>Common</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

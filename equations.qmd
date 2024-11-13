@@ -2,41 +2,19 @@
 title: "Formula"
 format: html
 ---
-- we do not consider these three variables in the Pyholos yet:
-     - $N_2O_{N_{SNdirect}}$,
-     - $N_2O_{N_{CRNmindirect}}$
-     - $N_2O_{N_{ONdirect}}$
-- $N_{CropResidues}$ depend on the crop should be the same?
-- $EF_{Topo}$ depends on P and PE
-- $RF\_TX$ depends on soil texure
-
 ## Formula used to calculate CO_2 Emission
-$$
-CO_2 = 273 \times \frac{44}{28} * N_2O_{N_{direct}}
-$$
 
-$$
-N_2O_{N_{direct}} = N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + N_2O_{N_{CropResidues}} 
-$$
+- $CO_2 = 273 \times \frac{44}{28} * N_2O_{N_{direct}}$
 
-$$
-N_2O_{N_{CropResidues}} = N_{CropResidues} \times EF
-$$
+- $N_2O_{N_{direct}} = N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + N_2O_{N_{CropResidues}}$
 
-$$
-N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times {area}
-$$
+- $N_2O_{N_{CropResidues}} = N_{CropResidues} \times EF$
 
-$$
-EF = EF_{Base} * RF\_NS * RF\_Till *RF\_CS * RF\_AM
-$$
+- $N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times {area}$
 
-$$
-(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N})*area))
-$$ 
+- $EF = EF_{Base} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM$
 
-
-### $N_{CropResidues}$
+### Nitrogen Inputs From Crop Residue Returned To Soil
 
 $$
 N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N})*area
@@ -58,20 +36,12 @@ $$
 
 For Cover and Silage Plant,
 $$
-AboveGround_{residue\_N} = {Grain_N} \quad \text{(2.5.6-6)}
+AboveGround_{residue\_N} = {Grain_N}
 $$
 
-- ${Grain_N} = \frac{C_{p\_to\_soil}}{0.45} \times \frac{N_p}{1000} $
+- $Grain_N$ : Nitrogen content of the grain returned to the soil (kg N/ha)
 
-- ${Straw_N} = \frac{C_s}{0.45} \times \frac{N_s}{1000} $
-
-     - $C_{p\_to\_soil} = C_p \times \frac{S_p}{100}$
-     - $C_s = C_p \times \frac{R_s}{R_p} \times \frac{S_s}{100}$
-         - $C_p = [(yield + yield \times \frac{S_p}{100}) \times (1 - \frac{{moisture \ content}}{100})] \times {Carbon \ concentration} $
-             - yield is defined by users
-             - moisture content is default based on the crop type
-             - Carbon concentration is default based on the crop type
-             - $S_p, N_p, N_s$
+- $Straw_N$ : Nitrogen content of the straw returned to the soil (kg N/ha)
 
 ### Below Ground Residue Nitrogen
 
@@ -95,16 +65,62 @@ $$
 For cover and silage plant,
 
 $$
-BelowGround_{residue_N} = {Root_N} + {Exudate_N} \quad \text{(2.5.6-8)}
+BelowGround_{residue_N} = {Root_N} + {Exudate_N}
 $$
+
+**Variables**:
+
+- $Root_N$ : Nitrogen content of the roots returned to the soil (kg N/ha)
+
+- $Exudate_N$ : Nitrogen content of the exudates returned to the soil (kg N/ha)
+
+- $Grain_N$ : Nitrogen content of the grains returned to the soil (kg N/ha)
+
+### Nitrogen Content Returned To The Soil
+- ${Grain_N} = \frac{C_{p\_to\_soil}}{0.45} \times \frac{N_p}{1000} $
+
+- ${Straw_N} = \frac{C_s}{0.45} \times \frac{N_s}{1000} $
 
 - ${Root}_N = \frac{C_r}{0.45} \times \frac{N_r}{1000}$
 
 - ${Exudate}_N = \frac{C_e}{0.45} \times \frac{N_e}{1000}$
 
-     - $C_r = C_p \times \frac{R_r}{R_p} \times \frac{S_r}{100}$
+     **Variables**:
 
-     - $C_e = C_p \times \frac{R_e}{R_p}$
+      - $C_{p\_to\_soil}$ : Carbon input from products (kg/ha) 
+      - $C_p$: Plant C (carbon) in agricultural product (kg/ha) 
+      - $C_s$: C (carbon) input from straw (kg/ha)
+      - $C_r$: C (carbon) input from roots (kg/ha)
+      - $C_e$: C (carbon) input from extra-root material (kg/ha)
+      - $N_p$: Nitrogen concentration in the product (kg N/kg)
+      - $N_s$: Nitrogen concentration in the straw (kg N/kg)
+      - $N_r$: Nitrogen concentration in the root (kg N/kg)
+      - $N_e$: Nitrogen concentration in the extraroo (kg N/kg)
+
+### Carbon Input
+
+- $C_{p\_to\_soil} = C_p \times \frac{S_p}{100}$
+
+- $C_p = [(yield + yield \times \frac{S_p}{100}) \times (1 - \frac{{moisture \ content}}{100})] \times {Carbon \ concentration} $
+
+- $C_s = C_p \times \frac{R_s}{R_p} \times \frac{S_s}{100}$
+
+- $C_r = C_p \times \frac{R_r}{R_p} \times \frac{S_r}{100}$
+
+- $C_e = C_p \times \frac{R_e}{R_p}$
+
+     **Variables**:
+
+      - yield is defined by users
+      - moisture content is default based on the crop type
+      - Carbon concentration is default based on the crop type
+      - $S_p$: Percentage of product yield returned to soil (%)
+      - $S_s$: Percentage of straw yield returned to soil (%)
+      - $S_r$: Percentage of root yield returned to soil (%)
+      - $R_p$: Relative biomass allocation coefficient for product
+      - $R_s$: Relative biomass allocation coefficient for straw
+      - $R_r$: Relative biomass allocation coefficient for root
+      - $R_e$: Relative biomass allocation coefficient for extra-root
 
 
 ### Emission Factor 
@@ -125,7 +141,10 @@ $$
 EF_{{CT}_{PE}}= \exp^{0.00558 \times PE - 7.7}
 $$ 
 
-- For non-irrigated sites:
+**Variables**:
+
+- P: Annual growing season precipitation (May – October) (mm)
+- PE: Annual growing season potential evapotranspiration (May – October) (mm)
 
 $$
 EF_{Topo} = (EF_{{CT}_{PE}} \times FR_{Topo}) + [EF_{{CT}_{P}} \times (1 - FR_{Topo})]
@@ -139,9 +158,8 @@ $$
 
 **Variables**:
 
-- $EF_{CT}$: Ecodistrict-level emission factor ($kg \, N_2O\text{-}N \, (kg \, N)^{-1}$)
-- $P$: Annual growing season precipitation (May – October)(mm)
-- $PE$: Growing season potential evapotranspiration, by ecodistrict (May – October) (mm)
+- $FR_{Topo}$: Fraction of land occupied by lower portions of landscape based on ecodistrict
+ 
 
 $$
 EF_{Base} = (EF_{Topo} \times RF\_TX) \times \frac{1}{0.645} 
@@ -156,10 +174,13 @@ $$
 EF = (EF_{Topo} \times RF\_TX) \times \frac{1}{0.645} * RF\_NS * RF\_Till *RF\_CS * RF\_AM
 $$
 
+**Variables**:
 
-$$
-N_{CropResidues} = (AboveGround_{residue\_N} + BelowGround_{residue\_N})*area
-$$
+- $RF_{TX}$: A correction of the $EF_{Topo}$ in specific ecodistrict based on the soil texture 
+- $RF_{CS}$: Reduction factor for Cropping System
+- $RF_{NS}$: Reduction factor for N sourse 
+- $RF_{AM}$: Reduction factor based on application method
+- $RF_{Till}$: Tillage modifier based on tillage method
 
 
 
@@ -653,3 +674,14 @@ if mean_daily_temperature $\leq 0$, $PE = 0$
 
 - do we need to introduce CO₂?
 
+- we do not consider these three variables in the Pyholos yet:
+     - $N_2O_{N_{SNdirect}}$,
+     - $N_2O_{N_{CRNmindirect}}$
+     - $N_2O_{N_{ONdirect}}$
+
+
+General formula:
+
+$$
+(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N})*area))
+$$ 

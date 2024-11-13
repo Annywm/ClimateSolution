@@ -3,3 +3,4 @@ title: "Reference"
 format: html
 ---
 
+- Utilize [Zotero](https://www.zotero.org/groups/5749439/agroecology_for_climate/items/794BNM65/library) to collaboratively share and organize all literature reviews for our project

@@ -20,11 +20,14 @@ website:
             text: "Equations"
           - href: variables.qmd
             text: "Variables"
-            
-      - href: timeline.qmd
-        text: "Timeline"
+      - text: "Project Updates"
+        menu:     
+          - href: timeline.qmd
+            text: "Timeline"
+          - href: progress.qmd
+            text: "To-Do List"
       - href: reference.qmd
-        text: "Reference"
+        text: "References"
       
       - text: "Datasets"
         menu:

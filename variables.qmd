@@ -6,7 +6,16 @@ format: html
 
 ### Climate 
 
-| **Variable Name** | **Description** | **Units** | **Associate Formula/Variables(if applicable)** | **Region/Country Specific** | **Data Source** | 
-|--------------------|-----------------|-----------|-----------------------------|----------------------------|------------------|
-| P | Annual growing season precipitation (May – October) | mm | $EF_{{CT}_{P}}$ | Common | Default(based on ecodistrict level) & External Source (NASA)| 
-| PE | Annual growing season potential evapotranspiration (May – October)  | mm  | $EF_{{CT}_{PE}}$| Common | Default(based on ecodistrict level) & External Source(NASA) | 
+| **Variable Name** | **Description** | **Units** | **Associate Formula/Variables(if applicable)** | **Region/Country Specific** |
+|--------------------|-----------------|-----------|-----------------------------|----------------------------|
+| $C_p$ | Plant C (carbon) in agricultural product | kg/ha | $C_{p\_to\_soil}$,$C_s$,$C_r$,$C_e$| Common |
+| $C_{p\_to\_soil} | Carbon input from products  | kg/ha  | $Grain_N$| Common | 
+| $C_s$ | C (carbon) input from straw| kg/ha | $Straw_N$| Common |
+| $C_r$ | C (carbon) input from roots| kg/ha | $Root_N$| Common |
+| $C_e$ | C (carbon) input from extra-root material| kg/ha | $Exuate_N$| Common |
+| $Grain_N$ | Nitrogen content of the grain returned to the soil| kg N /ha |$AboveGroundResidue_N$| Common |
+| $Straw_N$ | Nitrogen content of the straw returned to the soil| kg N /ha |$AboveGroundResidue_N$| Common |
+| $Root_N$ | Nitrogen content of the roots returned to the soil| kg N /ha |$BelowGroundResidue_N$| Common |
+| $Exudate_N$ | Nitrogen content of the exudates returned to the soil| kg N /ha |$BelowGroundResidue_N$| Common |
+| $AboveGroundResidue_N$ | Nitrogen in above-ground crop residues| kg N |$N_{CropResidues}$| Common |
+| $BelowGroundResidue_N$ | Nitrogen in below-ground crop residues| kg N |$N_{CropResidues}$| Common |
