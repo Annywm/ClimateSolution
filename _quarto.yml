@@ -22,8 +22,6 @@ website:
             text: "Variables"
       - text: "Project Updates"
         menu:     
-          - href: timeline.qmd
-            text: "Timeline"
           - href: progress.qmd
             text: "Progress"
           - href: To_do.qmd
