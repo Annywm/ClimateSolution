@@ -5,8 +5,7 @@ format: html
 
 ## Caitie
 
-
-Continuing to cultivate useful literature to inform our project.  I am finding sources that will: 
+Continuing to cultivate useful literature to inform our project. I am finding sources that will: 
 
 - Help us in decision-making process as we adapt the PyHolos model
 
@@ -28,21 +27,6 @@ Specifically, I have:
 - My goal is to find 10-15 journal articles and summarize them before our presentation in December.  Currently, I have dissected 4 papers. 
 
 - Using this information, I will be able to provide context and foundational information for our project, which I can lead during our presentation. 
-
-## Sofia
-
-To date, I have focused my attention to two main areas:
-
-1. Reserach to determine variables which may be helpful for our own modelling purposes, to request from the UBC Farm databases.
-
-- In item 1, I have been accessing LCA databses to see the network of inputs/outputs that certain crop farming practices require. Currently I have been exploring potato farming, in the LCA Commons database of the USDA. I believe that since LCA databases are highly utilized, I would be able to find reliable information that could be similar to what is contained at the UBC Farm databases.
-
-Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with the ecoinvent database. This will provide a detailed diagram of all the inputs/outputs that can inform our own data needs. Likley the LCA databses contain far more data than we will be able to have from the UBC Farm, but it is a very good start for our data gathering, alongside with literaeture review that is being done by me peers.
-
-2. Further looking at comparisons of the model outputs coming from HOLOS and PyHOLOS.
-
-- In item 2, I have begun to go through some JSON files with my peer Anny. These files contain the resultant values from the HOLOS models which we are comparing to the PyHOLOS model output. We noticed that there are discrpanicies between model results for the same input crops. In order to detect differences more easily, we decided to creeate a JSON decoder, to transform the JSON file into a more readable format. This could be something that we could “teach” our group memebrs about to allow for others to help us with this task once the decoder is working.
-
 
 ## Anny
 
@@ -73,6 +57,38 @@ Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with t
 **Further Actions**
 
   - work with Sofia to create a JSON decoder to transform JSON files into a more readable format
-  - Investicate the differences between Holos and Pyholos.
+  - Investicate the differences between Holos and Pyholos. 
   - Conduct a simple LCA model of potato farming using OpenLCA with Sofia.
 
+
+## Sofia
+
+To date, I have focused my attention to two main areas:
+
+1. Reserach to determine variables which may be helpful for our own modelling purposes, to request from the UBC Farm databases.
+
+- In item 1, I have been accessing LCA databses to see the network of inputs/outputs that certain crop farming practices require. Currently I have been exploring potato farming, in the LCA Commons database of the USDA. I believe that since LCA databases are highly utilized, I would be able to find reliable information that could be similar to what is contained at the UBC Farm databases.
+
+Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with the ecoinvent database. This will provide a detailed diagram of all the inputs/outputs that can inform our own data needs. Likley the LCA databses contain far more data than we will be able to have from the UBC Farm, but it is a very good start for our data gathering, alongside with literaeture review that is being done by me peers.
+
+2. Further looking at comparisons of the model outputs coming from HOLOS and PyHOLOS.
+
+- In item 2, I have begun to go through some JSON files with my peer Anny. These files contain the resultant values from the HOLOS models which we are comparing to the PyHOLOS model output. We noticed that there are discrpanicies between model results for the same input crops. In order to detect differences more easily, we decided to creeate a JSON decoder, to transform the JSON file into a more readable format. This could be something that we could “teach” our group memebrs about to allow for others to help us with this task once the decoder is working.
+
+## Evan
+
+My main focus has been on understanding how the data input and model output can serve farmers in their reporting requirements and carbon market goals, reduce their work and aid their other goals  
+
+1. Aligning with Farmers' Needs: For Scope 3 emissions reporting, what are food processing companies asking of their supply chain farmers in terms of data and certainty? What model outputs are needed from PyHolos to give farmers the information they need? This is not an immediate concern for Canadian farmers but is on the horizon for LiteFarm users so we should keep this door open.   
+
+2. Carbon Market Integration: What level of certainty do carbon market intermediaries need from farmers and carbon calculators to certify and send farmers financing for on-farm initiatives 
+
+3. Researching Carbon Market Standards: Investigating the standards for carbon markets, such as required accuracy, the role of N₂O versus CO₂, credit durability, and regional market dynamics (e.g., why Canada’s involvement is limited). 
+
+ 4. Networking for Insights: Planning to consult contacts in the voluntary carbon market to learn about certification processes, the accuracy expectations of credit buyers, and intermediate certification requirements. 
+
+ 5. Future Investigation – UBC Farm Data: Intending to examine UBC Farm Data to understand model inputs better, allowing for a comparative analysis of PyHolos and HOLOS to explore model discrepancies, in collaboration with Talha and team members.			 
+
+- Goals for the rest of November – short list of standards (CSRD, IPCC AFOLU, Verra VCS etc) and their key metrics, accuracy level, data loading overview (reach goal) 
+
+- Initial investigation of UBC Farm data, how easy is it to reconcile with Holos interface?  
