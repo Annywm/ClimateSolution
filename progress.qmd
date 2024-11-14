@@ -100,6 +100,6 @@ I primarily looked at the farm-level data shared with us by Ridhi and identified
 
 I also reviewed the PyHolos code to familiarize myself with it. I expect to work closely with the model team in building and implementing the model.  
 
-In addition, I will research a bit on the current economic models that could incorporate emissions measurement to quantify economic costs and benefits, which are likely to be at the heart of the trade-off farmers would face. This is not going to be a primary focus at the moment, but it would be useful (IMO at the moment, but would be useful (imo) to have a dollar value paired with emissions.  
+In addition, I will research a bit on the current economic models that could incorporate emissions measurement to quantify economic costs and benefits, which are likely to be at the heart of the trade-off farmers would face. This is not going to be a primary focus at the moment, but it would be useful (imo) to have a dollar value paired with emissions at some point.  
 
 Although jointly determined with the team, my objective would be to get up to speed with PyHolos model and get access to all the relevant data and run a baseline model. The next term would be where I think improvements and advancements to the model would make more sense.  
