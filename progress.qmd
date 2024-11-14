@@ -92,3 +92,14 @@ My main focus has been on understanding how the data input and model output can 
 - Goals for the rest of November – short list of standards (CSRD, IPCC AFOLU, Verra VCS etc) and their key metrics, accuracy level, data loading overview (reach goal) 
 
 - Initial investigation of UBC Farm data, how easy is it to reconcile with Holos interface?  
+
+
+## Talha
+
+I primarily looked at the farm-level data shared with us by Ridhi and identified some key questions that we would require to understand in order to bridge the UBC farm data with the PyHolos along with the emissions. The natural next step would be to discuss with Ridhi to get more information on the questions and to connect with Alan so we can merge it with the emissions data.  
+
+I also reviewed the PyHolos code to familiarize myself with it. I expect to work closely with the model team in building and implementing the model.  
+
+In addition, I will research a bit on the current economic models that could incorporate emissions measurement to quantify economic costs and benefits, which are likely to be at the heart of the trade-off farmers would face. This is not going to be a primary focus at the moment, but it would be useful (IMO at the moment, but would be useful (imo) to have a dollar value paired with emissions.  
+
+Although jointly determined with the team, my objective would be to get up to speed with PyHolos model and get access to all the relevant data and run a baseline model. The next term would be where I think improvements and advancements to the model would make more sense.  
