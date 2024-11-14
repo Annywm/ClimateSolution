@@ -73,30 +73,5 @@ Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with t
 
   - work with Sofia to create a JSON decoder to transform JSON files into a more readable format
   - Investicate the differences between Holos and Pyholos.
-
-
-
-
-## Task Table
-
-|Task List| Assignee | START DATE   | DUE DATE     | % COMPLETE | NOTE |
-|--------------------------------------------|----------|--------------|--------------|------------|------|
-| Literature Review (Aim for 10-15 papers)  | Caitie   | September 1st | December 1st | 10%       | Preliminary Literature Review |
-| Create Slides for the Solutions Scholar presentation | Caitie   | November 18th | December 5th | 0%       |10 mins presentation |
-| Email Alan to Discuss Data Access  | Evan   | UNKNOWN | UNKNOWN| 0%       | NA |
-| Add Notes to Literature Review  | Evan   | UNKNOWN | UNKNOWN| 0%       | NA |
-|Input Progress Update to Project Webpage via Quarto | Anny   | October 1st | June 1st| 10%      | Keep updates |
-|Create a script to transfer the json file to a table | Sofia, Anny   | November 11th | Unkown| 10%      | NA|
-|Invesitage all the default value in the Holos Model | Sofia, Anny  | November 1st | Unkown| 10%      | Focus on the Anual and Root crop for now|
-|Summarize and Refine Clear List of Deliverables for the End of Semester | Whole Team  | October 1st | June 1st| 0%      | NA |
-|Create Timeline for Solutions Scholar presentation in December  | Whole Team  | November 1st | December 1st| 0%      | NA |
-
-
-
-
-
-
-
-
-
+  - Conduct a simple LCA model of potato farming using OpenLCA with Sofia.
 
