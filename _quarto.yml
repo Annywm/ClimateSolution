@@ -26,7 +26,7 @@ website:
             text: "Timeline"
           - href: progress.qmd
             text: "Progress"
-          - href: To_Do.qmd
+          - href: To_do.qmd
             text: "To-Do List"
       - href: reference.qmd
         text: "References"

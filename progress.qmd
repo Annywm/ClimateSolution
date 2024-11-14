@@ -69,6 +69,7 @@ Next, I aim to conduct a simple LCA model of potato farming using OpenLCA with t
 
 - The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar.
 ![crop group comparison](different crop group.png)    
+
 **Further Actions**
 
   - work with Sofia to create a JSON decoder to transform JSON files into a more readable format

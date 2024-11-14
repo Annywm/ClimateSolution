@@ -204,5 +204,5 @@ $$
 General formula:
 
 $$
-(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N})*area))
+(N_2O_{N_{SNdirect}} + N_2O_{N_{CRNmindirect}} + N_2O_{N_{ONdirect}} + EF_{Topo} \times RF\_TX \times \frac{1}{0.645} \times RF\_NS \times RF\_Till \times RF\_CS \times RF\_AM \times ((AboveGround_{residue\_N} + BelowGround_{residue\_N}) \times area))
 $$ 
