@@ -3,7 +3,7 @@ project:
 
 publish:
   gh-pages:
-    branch: gh-pages    # Quarto will publish to this branch
+    branch: gh-pages    
     repo: annywm/ClimateSolution
   
 website:
