@@ -203,6 +203,7 @@ window.Quarto = {
   <li><a href="#anny" id="toc-anny" class="nav-link" data-scroll-target="#anny">Anny</a></li>
   <li><a href="#sofia" id="toc-sofia" class="nav-link" data-scroll-target="#sofia">Sofia</a></li>
   <li><a href="#evan" id="toc-evan" class="nav-link" data-scroll-target="#evan">Evan</a></li>
+  <li><a href="#talha" id="toc-talha" class="nav-link" data-scroll-target="#talha">Talha</a></li>
   </ul>
 </nav>
     </div>
@@ -257,7 +258,15 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="anny">Anny</h2>
 <p><strong>Focused on the comparison of model outputs from Holos and Pyholos</strong>:</p>
 <ul>
-<li><p>Compared CO2 crop direct emissions for different yields of potato for UBC farm. <img src="different yield.png" class="img-fluid" alt="yield comparison"></p></li>
+<li>Compared CO2_e crop direct emissions for different yields of potato for UBC farm.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="different_yield.png" class="img-fluid figure-img"></p>
+<figcaption>yield comparison</figcaption>
+</figure>
+</div>
+<ul>
 <li><p>the three lines have different slopes and intercepts, they show a similar linear trend.</p></li>
 <li><p>Differences are due to:</p>
 <ul>
@@ -269,11 +278,25 @@ window.Quarto = {
 </ul></li>
 </ul></li>
 <li><p>Different results for P and PE</p></li>
-<li><p>Compared three different provinces for the same yield (4,000 kg/ha) of potato. <img src="different province.png" class="img-fluid" alt="province comparison"></p></li>
+<li><p>Compared three different provinces for the same yield (4,000 kg/ha) of potato.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="different_province.png" class="img-fluid figure-img"></p>
+<figcaption>province comparison</figcaption>
+</figure>
+</div>
+<ul>
 <li><p>Compared the same yield (4,000 kg/ha) for UBC Farm with different crop group types</p></li>
 <li><p>For the crops Soybean (Annual crop), there are big differences between Holos and PyHolos in terms of crop direct emissions.</p></li>
-<li><p>The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar. <img src="different crop group.png" class="img-fluid" alt="crop group comparison"></p></li>
+<li><p>The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="different_group.png" class="img-fluid figure-img"></p>
+<figcaption>crop group comparison</figcaption>
+</figure>
+</div>
 <p><strong>Further Actions</strong></p>
 <ul>
 <li>work with Sofia to create a JSON decoder to transform JSON files into a more readable format</li>
@@ -312,6 +335,13 @@ window.Quarto = {
 <li><p>Goals for the rest of November – short list of standards (CSRD, IPCC AFOLU, Verra VCS etc) and their key metrics, accuracy level, data loading overview (reach goal)</p></li>
 <li><p>Initial investigation of UBC Farm data, how easy is it to reconcile with Holos interface?</p></li>
 </ul>
+</section>
+<section id="talha" class="level2">
+<h2 class="anchored" data-anchor-id="talha">Talha</h2>
+<p>I primarily looked at the farm-level data shared with us by Ridhi and identified some key questions that we would require to understand in order to bridge the UBC farm data with the PyHolos along with the emissions. The natural next step would be to discuss with Ridhi to get more information on the questions and to connect with Alan so we can merge it with the emissions data.</p>
+<p>I also reviewed the PyHolos code to familiarize myself with it. I expect to work closely with the model team in building and implementing the model.</p>
+<p>In addition, I will research a bit on the current economic models that could incorporate emissions measurement to quantify economic costs and benefits, which are likely to be at the heart of the trade-off farmers would face. This is not going to be a primary focus at the moment, but it would be useful (imo) to have a dollar value paired with emissions at some point.</p>
+<p>Although jointly determined with the team, my objective would be to get up to speed with PyHolos model and get access to all the relevant data and run a baseline model. The next term would be where I think improvements and advancements to the model would make more sense.</p>
 
 
 </section>

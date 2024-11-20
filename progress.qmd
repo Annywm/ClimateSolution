@@ -32,8 +32,9 @@ Specifically, I have:
 
 **Focused on the comparison of model outputs from Holos and Pyholos**:
    
-- Compared CO2 crop direct emissions for different yields of potato for UBC farm.
-![yield comparison](different yield.png)
+- Compared CO2_e crop direct emissions for different yields of potato for UBC farm.
+
+![yield comparison](different_yield.png)
 
 - the three lines have different slopes and intercepts, they show a similar linear trend.
 - Differences are due to: 
@@ -45,14 +46,16 @@ Specifically, I have:
 - Different results for P and PE 
 
 - Compared three different provinces for the same yield (4,000 kg/ha) of potato.
-![province comparison](different province.png)        
+
+![province comparison](different_province.png)        
 
 - Compared the same yield (4,000 kg/ha) for UBC Farm with different crop group types
 
 - For the crops Soybean (Annual crop), there are big differences between Holos and PyHolos in terms of crop direct emissions.
 
 - The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar.
-![crop group comparison](different crop group.png)    
+
+![crop group comparison](different_group.png)    
 
 **Further Actions**
 
