@@ -34,7 +34,7 @@ Specifically, I have:
    
 - Compared CO2_e crop direct emissions for different yields of potato for UBC farm.
 
-![yield comparison](different_yield.png)
+![yield comparison](yield.png)
 
 - the three lines have different slopes and intercepts, they show a similar linear trend.
 - Differences are due to: 
@@ -47,7 +47,7 @@ Specifically, I have:
 
 - Compared three different provinces for the same yield (4,000 kg/ha) of potato.
 
-![province comparison](different_province.png)        
+![province comparison](province.png)        
 
 - Compared the same yield (4,000 kg/ha) for UBC Farm with different crop group types
 
@@ -55,7 +55,7 @@ Specifically, I have:
 
 - The result from Holos and PyHolos for Potato (root crop) and Baley Silage (silage) are approximately similar.
 
-![crop group comparison](different_group.png)    
+![crop group comparison](crop group.png)    
 
 **Further Actions**
 
