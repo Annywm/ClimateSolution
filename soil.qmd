@@ -21,6 +21,7 @@ comparison.head(4)
 
 ![variables](PIC/holos2.png)
 
+![pyholos](PIC/pyholos1.png)
 
 
 ## Demo Table
@@ -151,3 +152,7 @@ data5 = pd.read_csv("/Users/app/Desktop/UBC/myself/ClimateSolution/table/HolosJs
 # Display the table
 data5
 ```
+
+### presentation
+
+[Presentation](https://www.canva.com/design/DAGXcM87PW0/SXPwj_Rpct2_RI6-vOlC3Q/edit)
