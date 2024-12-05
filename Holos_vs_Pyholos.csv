@@ -1,0 +1,44 @@
+sources,farm_id,area(ha),latitude,longitude,crop,yield(kg/ha),start_year,end_year,eco_id,province,group,carbon_concentration,S_s (100%),S_r  (%),S_p(product return to soil %),moisture,R_p (biomass coefficient product),R_s (biomass coefficient straw),R_r(biomass coefficient root),R_e (biomass coefficient extra root),N_p (nitrogen content in product),N_s ((nitrogen content in straw)),N_r (nitrogen content in root),N_e(nitrogen content in extra root),P(mm),PE(mm),"FR_Topo (Fraction of land
+occupied by lower
+portions of
+landscape
+)",soil_texture(RF_TX),RF_AM,RF_CS,RF_NS,RF_Till,C_p (plant carbon in product[kg C /ha]),above_ground_carbon_input (kg C/ha),below_ground_carbon_input (kg C/ha),above_ground_residue_n (combined above ground residue nitrogen),below_ground_residue_n (combined above ground residue nitrogen),n_crop_residue (crop residue nitrogen pool_N_crop_residues),EF_CT_P (Ecodistrict-level emission factor (𝑘𝑔 𝑁2𝑂-𝑁 (𝑘𝑔 𝑁 )−1)),EF_CT_PE,EF_Topo,EF,n_crop_direct,no2_crop_direct (kg CO2e),co2_crop_direct
+Holos,47e212a6-075f-11ec-a016-0242ac140002,0.1422,49.2515,-123.23686,Potato,40000,2022,2022,959,British Columbia,Root,0.45,100,100,0,75,0.736,0.239,0.015,0.01,0.015,0.02,0.01,0.01,378.55,555.38,0.0653,1,NA,NA,NA,NA,4500,1461.277174,61.14130435,64.94565217,3.39673913,NA,NA,NA,NA,NA,NA,0.060128748,15.44
+Pyholos,47e212a6-075f-11ec-a016-0242ac140002,0.1422,49.2515,-123.23686,Potato,40000,2022,2022,959,British Columbia,Root,0.45,100,100,0,75,0.736,0.239,0.015,0.01,15,20,10,10,405.84,480.31,6.53,1,1,1,0.84,1,4500,1461.277174,61.14130435,64.94565217,1.358695652,9.428478261,0.004359435,0.006605384,0.004506096,0.00639656,0.060309825,0.094772582,25.87291498
+Pyholos,47e212a6-075f-11ec-a016-0242ac140002,0.1422,49.2515,-123.23686,Potato,40000,2022,2022,959,British Columbia,Root,0.45,100,100,0,75,0.736,0.239,0.015,0.01,15,20,10,10,378.55,555.38,6.53,1,1,1,0.84,1,4500,1461.277174,61.14130435,64.94565217,3.39673913,9.718288043,0.003755016,0.01008671,0.004168476,0.006462754,0.062806901,0.098696559,26.94416064
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Crop Data,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+variable name,Description,Pyholos,Holos,,CropResidueNitrogenPool_N_CropResidues,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,64.94565217,,,,,,,,,,,
+Moisture,Moisture content of product(%),75,75,,DirectNitrousOxideEmissionsFromCropResiduesForArea,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+yield,"Crop yield (____ wet weight ____1, default provided, user override)",40000,40000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carbon concentration,Carbon concentration of all plant parts(kg C/kg),0.45,0.45,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sp,Percentage of product yield returned to soil,0,0,,crop_group_parameters.table,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ss,Percentage of straw yield returned to soil,100,100,,crop_parameter,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sr,Percentage of root yield returned to soil,100,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Rp,Relative biomass allocation coefficient for product,0.736,0.736,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Rs,Relative biomass allocation coefficient for straw,0.239,0.239,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Rr,Relative biomass allocation coefficient for roots,0.015,0.015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Re,Relative biomass allocation coefficient for extra-root,0.01,0.01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Np,Nitrogen concentration in the product,15,0.015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ns,Nitrogen concentration in the straw,20,0.02,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nr,Nitrogen concentration in the root,10,0.01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ne,Nitrogen concentration in the extraroot,10,0.01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Modifier Data,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Variable name,Description ,Pyholos,Holos,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FR_Topo,Fraction of land occupied by lower portions of landscape based on ecodistrict,0.0653,0.0653,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_TX,a correction of the�EFTopo�in specific ecodistrict based on the soil texture,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_CS,Reduction factor for Cropping System,1,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_NS,Reduction factor for N sourse,0.84,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_AM,Reduction factor based on application method,1,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_till,Tillage modifier based on tillage method,1,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+variable name,Description,Pyholos,Holos,,modifer_rf_tx,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FR_Topo,Fraction of land occupied by lower portions of landscape based on ecodistrict,0.0653,0.0653,,modifer_rf_am,/Users/app/Desktop/UBC/Agroecology4Climate_2024/GHG-LiteFarm-MDS-Capstone/data/raw/Holos/ecodistrict_to_ecozone_mapping.csv,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_TX,a correction of the�EFTopo�in specific ecodistrict based on the soil texture,1,1,,modifer_rf_cs,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_CS,Reduction factor for Cropping System,1,NA,,modifier_rf_till,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_NS,Reduction factor for N sourse,0.84,NA,,modifier_rf_ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_AM,Reduction factor based on application method,1,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RF_till,Tillage modifier based on tillage method,1,NA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
