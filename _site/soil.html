@@ -168,8 +168,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#comparison-table" id="toc-comparison-table" class="nav-link active" data-scroll-target="#comparison-table">comparison table:</a></li>
+  <li><a href="#demo-table" id="toc-demo-table" class="nav-link" data-scroll-target="#demo-table">Demo Table</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -193,8 +200,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Here is the comparison table:</p>
-<div id="13dc0df8" class="cell" data-execution_count="1">
+<section id="comparison-table" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-table">comparison table:</h2>
+<div id="099179cc" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <div>
 
@@ -203,58 +211,106 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">NO3NFromSyntheticFertilizerLeaching</th>
-<th data-quarto-table-cell-role="th">NO3NFromResiduesLeaching</th>
-<th data-quarto-table-cell-role="th">NO3NFromManureAndDigestateLeaching</th>
-<th data-quarto-table-cell-role="th">TotalN2ONFromManureAndDigestateLeaching</th>
-<th data-quarto-table-cell-role="th">TotalN2ONFromManureAndDigestateLeachingExcludingRemainingAmounts</th>
-<th data-quarto-table-cell-role="th">NO3NFromMineralizationLeaching</th>
-<th data-quarto-table-cell-role="th">NH4FromSyntheticNitogenVolatilized</th>
-<th data-quarto-table-cell-role="th">DigestateCarbonInputsPerHectare</th>
-<th data-quarto-table-cell-role="th">DigestateApplicationViewItems</th>
-<th data-quarto-table-cell-role="th">HasDigestateApplications</th>
+<th data-quarto-table-cell-role="th">sources</th>
+<th data-quarto-table-cell-role="th">farm_id</th>
+<th data-quarto-table-cell-role="th">area(ha)</th>
+<th data-quarto-table-cell-role="th">latitude</th>
+<th data-quarto-table-cell-role="th">longitude</th>
+<th data-quarto-table-cell-role="th">crop</th>
+<th data-quarto-table-cell-role="th">yield(kg/ha)</th>
+<th data-quarto-table-cell-role="th">start_year</th>
+<th data-quarto-table-cell-role="th">end_year</th>
+<th data-quarto-table-cell-role="th">eco_id</th>
 <th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">TotalDryMatterLostFromBaleExports</th>
-<th data-quarto-table-cell-role="th">Name</th>
-<th data-quarto-table-cell-role="th">NameIsFromUser</th>
-<th data-quarto-table-cell-role="th">Description</th>
-<th data-quarto-table-cell-role="th">Guid</th>
-<th data-quarto-table-cell-role="th">DateCreated</th>
-<th data-quarto-table-cell-role="th">DateModified</th>
-<th data-quarto-table-cell-role="th">IsInitialized</th>
-<th data-quarto-table-cell-role="th">YearOfObservation</th>
-<th data-quarto-table-cell-role="th">IsDirty</th>
+<th data-quarto-table-cell-role="th">above_ground_residue_n (combined above ground residue nitrogen)</th>
+<th data-quarto-table-cell-role="th">below_ground_residue_n (combined above ground residue nitrogen)</th>
+<th data-quarto-table-cell-role="th">n_crop_residue (crop residue nitrogen pool_N_crop_residues)</th>
+<th data-quarto-table-cell-role="th">EF_CT_P (Ecodistrict-level emission factor (ùëòùëî ùëÅ2ùëÇ-ùëÅ (ùëòùëî ùëÅ )‚àí1))</th>
+<th data-quarto-table-cell-role="th">EF_CT_PE</th>
+<th data-quarto-table-cell-role="th">EF_Topo</th>
+<th data-quarto-table-cell-role="th">EF</th>
+<th data-quarto-table-cell-role="th">n_crop_direct</th>
+<th data-quarto-table-cell-role="th">no2_crop_direct (kg CO2e)</th>
+<th data-quarto-table-cell-role="th">co2_crop_direct</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>[]</td>
-<td>False</td>
+<td>Holos</td>
+<td>47e212a6-075f-11ec-a016-0242ac140002</td>
+<td>0.1422</td>
+<td>49.2515</td>
+<td>-123.23686</td>
+<td>Potato</td>
+<td>40000</td>
+<td>2022</td>
+<td>2022</td>
+<td>959</td>
 <td>...</td>
-<td>0.0</td>
+<td>64.945652</td>
+<td>3.396739</td>
 <td>NaN</td>
-<td>False</td>
 <td>NaN</td>
-<td>db96968a-3238-4944-b6f4-098b0f67a6f0</td>
-<td>0001-01-01T00:00:00</td>
-<td>0001-01-01T00:00:00</td>
-<td>True</td>
-<td>2024</td>
-<td>False</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.060129</td>
+<td>15.440000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Pyholos</td>
+<td>47e212a6-075f-11ec-a016-0242ac140002</td>
+<td>0.1422</td>
+<td>49.2515</td>
+<td>-123.23686</td>
+<td>Potato</td>
+<td>40000</td>
+<td>2022</td>
+<td>2022</td>
+<td>959</td>
+<td>...</td>
+<td>64.945652</td>
+<td>1.358696</td>
+<td>9.428478</td>
+<td>0.004359</td>
+<td>0.006605</td>
+<td>0.004506</td>
+<td>0.006397</td>
+<td>0.060310</td>
+<td>0.094773</td>
+<td>25.872915</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Pyholos</td>
+<td>47e212a6-075f-11ec-a016-0242ac140002</td>
+<td>0.1422</td>
+<td>49.2515</td>
+<td>-123.23686</td>
+<td>Potato</td>
+<td>40000</td>
+<td>2022</td>
+<td>2022</td>
+<td>959</td>
+<td>...</td>
+<td>64.945652</td>
+<td>3.396739</td>
+<td>9.718288</td>
+<td>0.003755</td>
+<td>0.010087</td>
+<td>0.004168</td>
+<td>0.006463</td>
+<td>0.062807</td>
+<td>0.098697</td>
+<td>26.944161</td>
 </tr>
 </tbody>
 </table>
 
-<p>1 rows × 275 columns</p>
+<p>3 rows × 46 columns</p>
 </div>
 </div>
 </div>
@@ -270,10 +326,624 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Modifier Comparison</figcaption>
 </figure>
 </div>
+</section>
+<section id="demo-table" class="level2">
+<h2 class="anchored" data-anchor-id="demo-table">Demo Table</h2>
+<p><a href="https://ubcca.sharepoint.com/:x:/r/teams/ubcLFS-gr-Agroecology4Climate/_layouts/15/Doc2.aspx?action=edit&amp;sourcedoc=%7B676a650a-26eb-432b-9ca7-86ab20f0536f%7D&amp;wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&amp;wdExp=TEAMS-TREATMENT&amp;wdhostclicktime=1733417829239&amp;web=1">Demo Table</a></p>
+<p>The dataset used in the pyholos</p>
+<div id="b4590d05" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">method</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>controlled_release</td>
+<td>0.86</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>nitrification_inhibitor</td>
+<td>0.72</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>urease_inhibitor</td>
+<td>1.04</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>both_inhibitors</td>
+<td>0.69</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>default</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="f4cdf812" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">group</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Annual</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Perennial</td>
+<td>0.19</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="a8c59df2" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">N_source</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>RF_NS_CRN</td>
+<td>0.84</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>RF_NS_SN</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>RF_NS_ON</td>
+<td>0.84</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>RF_NC_Unknown</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="79744307" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">region</th>
+<th data-quarto-table-cell-role="th">tillage</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>eastern_canada</td>
+<td>reduced_tillage</td>
+<td>1.05</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>eastern_canada</td>
+<td>no_tillage</td>
+<td>1.05</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>eastern_canada</td>
+<td>intensive_tillage</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>eastern_canada</td>
+<td>unknown</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>western_canada</td>
+<td>reduced_tillage</td>
+<td>0.73</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>western_canada</td>
+<td>no_tillage</td>
+<td>0.73</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>western_canada</td>
+<td>intensive_tillage</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>western_canada</td>
+<td>unknown</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="d4630ee5" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">region</th>
+<th data-quarto-table-cell-role="th">soil_texture</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>eastern_canada</td>
+<td>coarse</td>
+<td>0.49</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>eastern_canada</td>
+<td>medium</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>eastern_canada</td>
+<td>fine</td>
+<td>2.55</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>eastern_canada</td>
+<td>unknown</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>western_canada</td>
+<td>coarse</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>western_canada</td>
+<td>medium</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>western_canada</td>
+<td>fine</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>western_canada</td>
+<td>unknown</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="395a26d5" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Ecodistrict</th>
+<th data-quarto-table-cell-role="th">Ecozone</th>
+<th data-quarto-table-cell-role="th">Province</th>
+<th data-quarto-table-cell-role="th">PMayToOct</th>
+<th data-quarto-table-cell-role="th">PEMayToOct</th>
+<th data-quarto-table-cell-role="th">Ftopo</th>
+<th data-quarto-table-cell-role="th">SoilType</th>
+<th data-quarto-table-cell-role="th">SoilTexture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>358</td>
+<td>Boreal Shield West</td>
+<td>Manitoba</td>
+<td>348</td>
+<td>453</td>
+<td>0.00</td>
+<td>Brown Chernozem</td>
+<td>Coarse</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>358</td>
+<td>Boreal Shield West</td>
+<td>Saskatchewan</td>
+<td>348</td>
+<td>453</td>
+<td>0.00</td>
+<td>Brown Chernozem</td>
+<td>Coarse</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>371</td>
+<td>Boreal Shield West</td>
+<td>Manitoba</td>
+<td>376</td>
+<td>581</td>
+<td>0.33</td>
+<td>Black/Gray Chernozem</td>
+<td>Fine</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>371</td>
+<td>Boreal Shield West</td>
+<td>Ontario</td>
+<td>376</td>
+<td>581</td>
+<td>0.33</td>
+<td>Eastern Canada</td>
+<td>Fine</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>375</td>
+<td>Boreal Shield West</td>
+<td>Manitoba</td>
+<td>411</td>
+<td>579</td>
+<td>0.33</td>
+<td>Black/Gray Chernozem</td>
+<td>Fine</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">464</td>
+<td>1017</td>
+<td>Montane Cordillera</td>
+<td>Alberta</td>
+<td>329</td>
+<td>588</td>
+<td>0.00</td>
+<td>Black/Gray Chernozem</td>
+<td>Medium</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">465</td>
+<td>1017</td>
+<td>Montane Cordillera</td>
+<td>British Columbia</td>
+<td>321</td>
+<td>554</td>
+<td>0.00</td>
+<td>Black/Gray Chernozem</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">466</td>
+<td>1018</td>
+<td>Montane Cordillera</td>
+<td>Alberta</td>
+<td>326</td>
+<td>574</td>
+<td>12.62</td>
+<td>Black/Gray Chernozem</td>
+<td>Medium</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">467</td>
+<td>1019</td>
+<td>Montane Cordillera</td>
+<td>Alberta</td>
+<td>335</td>
+<td>581</td>
+<td>12.62</td>
+<td>Black/Gray Chernozem</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">468</td>
+<td>1019</td>
+<td>Montane Cordillera</td>
+<td>British Columbia</td>
+<td>335</td>
+<td>581</td>
+<td>12.62</td>
+<td>Black/Gray Chernozem</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<p>469 rows × 8 columns</p>
+</div>
+</div>
+</div>
+<div id="74d5b7f5" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="8">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">group</th>
+<th data-quarto-table-cell-role="th">crop</th>
+<th data-quarto-table-cell-role="th">holos_crop_name</th>
+<th data-quarto-table-cell-role="th">condition</th>
+<th data-quarto-table-cell-role="th">moisture</th>
+<th data-quarto-table-cell-role="th">R_p</th>
+<th data-quarto-table-cell-role="th">R_s</th>
+<th data-quarto-table-cell-role="th">R_r</th>
+<th data-quarto-table-cell-role="th">R_e</th>
+<th data-quarto-table-cell-role="th">N_p</th>
+<th data-quarto-table-cell-role="th">N_s</th>
+<th data-quarto-table-cell-role="th">N_r</th>
+<th data-quarto-table-cell-role="th">N_e</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Small-grain cereals</td>
+<td>Small_grain_cereals</td>
+<td>Small grain cereals</td>
+<td>Rainfed</td>
+<td>12</td>
+<td>0.320</td>
+<td>0.511</td>
+<td>0.102</td>
+<td>0.067</td>
+<td>23.9</td>
+<td>6.0</td>
+<td>10.0</td>
+<td>10.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Small-grain cereals</td>
+<td>Wheat</td>
+<td>Wheat</td>
+<td>&lt;200</td>
+<td>12</td>
+<td>0.219</td>
+<td>0.551</td>
+<td>0.136</td>
+<td>0.095</td>
+<td>27.9</td>
+<td>8.6</td>
+<td>13.4</td>
+<td>13.4</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Small-grain cereals</td>
+<td>Wheat</td>
+<td>Wheat</td>
+<td>200-350</td>
+<td>12</td>
+<td>0.244</td>
+<td>0.518</td>
+<td>0.147</td>
+<td>0.091</td>
+<td>26.3</td>
+<td>8.2</td>
+<td>10.4</td>
+<td>10.4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Small-grain cereals</td>
+<td>Wheat</td>
+<td>Wheat</td>
+<td>&gt;350</td>
+<td>12</td>
+<td>0.431</td>
+<td>0.488</td>
+<td>0.049</td>
+<td>0.032</td>
+<td>56.2</td>
+<td>6.5</td>
+<td>11.9</td>
+<td>11.9</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Small-grain cereals</td>
+<td>Barley</td>
+<td>Barley</td>
+<td>&lt;350</td>
+<td>12</td>
+<td>0.451</td>
+<td>0.400</td>
+<td>0.090</td>
+<td>0.059</td>
+<td>19.0</td>
+<td>7.0</td>
+<td>10.0</td>
+<td>10.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">84</td>
+<td>Perennial forages</td>
+<td>Tame_legume</td>
+<td>Tame legume</td>
+<td>Canada</td>
+<td>13</td>
+<td>0.571</td>
+<td>0.000</td>
+<td>0.260</td>
+<td>0.169</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">85</td>
+<td>Perennial forages</td>
+<td>Tame_mixed</td>
+<td>Tame mixed</td>
+<td>Canada</td>
+<td>13</td>
+<td>0.298</td>
+<td>0.000</td>
+<td>0.426</td>
+<td>0.277</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">86</td>
+<td>Perennial forages</td>
+<td>Seeded_grassland</td>
+<td>Seeded grassland</td>
+<td>Canada</td>
+<td>13</td>
+<td>0.317</td>
+<td>0.000</td>
+<td>0.414</td>
+<td>0.269</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+<td>15.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">87</td>
+<td>Perennial forages</td>
+<td>Forage_for_seed</td>
+<td>Forage for seed</td>
+<td>Canada</td>
+<td>13</td>
+<td>0.100</td>
+<td>0.392</td>
+<td>0.308</td>
+<td>0.200</td>
+<td>30.0</td>
+<td>15.0</td>
+<td>13.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">88</td>
+<td>Trees</td>
+<td>Total_tree_fruits_nuts</td>
+<td>Total tree fruits &amp; nuts</td>
+<td>Canada</td>
+<td>84</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>89 rows × 13 columns</p>
+</div>
+</div>
+</div>
 <p>Below are the data provided in the interface of Holos</p>
 <p>Below are the dataset, converted from the JSON file generated by Holos.</p>
-<div id="101f8ab6" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div id="92ae8026" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 
 
@@ -336,8 +1006,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="99f34339" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div id="d74a84d8" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 
 
@@ -400,8 +1070,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="602cac6a" class="cell" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div id="25352c0f" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 
 
@@ -464,8 +1134,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="4e73f657" class="cell" data-execution_count="5">
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div id="1c89b99f" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <div>
 
 
@@ -528,8 +1198,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="ebd3039e" class="cell" data-execution_count="6">
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div id="4419371d" class="cell" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
 
@@ -642,6 +1312,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
