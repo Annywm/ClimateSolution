@@ -145,5 +145,5 @@ import pandas as pd
 data5 = pd.read_csv("/Users/app/Desktop/UBC/myself/ClimateSolution/table/HolosJsonFile/SoilDataAvailableForField_1.csv")
 
 # Display the table
-data5 
+data5
 ```
