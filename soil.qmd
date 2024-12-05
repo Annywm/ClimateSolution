@@ -1,7 +1,10 @@
 ---
 title: "Dataset"
 format: html
-echo: False
+execute:
+  echo: False
+  freeze: auto
+  warning: false
 ---
 ## comparison table:
 ```{python, }
