@@ -5,7 +5,6 @@ execute:
   echo: False
   freeze: auto
   warning: false
-jupyter: python3
 ---
 ### comparison table:
 ```{python}
